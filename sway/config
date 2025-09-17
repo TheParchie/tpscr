@@ -182,9 +182,6 @@ bindsym $mod+r mode "resize"
 # polkit
 exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
-# Network Manager applet
-exec_always nm-applet --indicator
-
 # Avizo
     bindsym XF86AudioRaiseVolume exec volumectl -u up
     bindsym XF86AudioLowerVolume exec volumectl -u down
@@ -195,3 +192,9 @@ exec_always nm-applet --indicator
     bindsym XF86MonBrightnessDown exec lightctl down
 
     exec "avizo-service"
+
+# Media Controls
+    bindsym XF86AudioPlay exec playerctl play-pause
+    bindsym XF86AudioNext exec playerctl next
+    bindsym XF86AudioPrev exec playerctl previous
+    bindsym XF86AudioStop exec playerctl stop
