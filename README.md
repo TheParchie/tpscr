@@ -1,5 +1,5 @@
-# tpscr
-TheParchie's Sway config repo
+# mescr
+MorEzik's Sway config repo
 
 -----------------------------------------------------------------------------------
 
